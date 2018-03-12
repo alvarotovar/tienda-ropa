@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "911868441511",
+    "firebase_url": "https://co-com-mideropa.firebaseio.com",
+    "project_id": "co-com-mideropa",
+    "storage_bucket": "co-com-mideropa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911868441511:android:1d9610f9c1d21687",
+        "android_client_info": {
+          "package_name": "co.com.mideropa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911868441511-5jvsnhm18rg0m7fq6h72f71tk6is3goa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFcB4Yg6nZMkBhxsmIc4cmWHaCLktdt50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+  
+  {{mensaje}}
+  <form (ngSubmit)="ingreso()" #formularioLogin="ngForm">
+    <ion-label> Usuario </ion-label>
+    <ion-input [(ngModel)]="username" #usuario name="username" required></ion-input>
+    <ion-label>Clave:</ion-label>
+    <ion-input [(ngModel)]="clave" #clave 
+    name="clave" required></ion-input>
+    <button ion-button type="submit" [disabled]="!usuario.valid || !clave.valid" block>ingresa</button>
+  </form>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>

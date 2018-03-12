@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <encabezado></encabezado>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    Buscar productos
+  </p>
+  <form (ngSubmit)="buscar()" #form="ngForm">
+    <ion-item>
+
+      <ion-label>Selecciona categoria</ion-label>
+      <ion-select [(ngModel)]="modelo.buscador.categorias" multiple="true" name="categoriasFiltro" #categoriasFiltro required>
+        <ion-option>ROPA</ion-option>
+        <ion-option>MUEBLE</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Texto</ion-label>
+      <ion-input type="text" [(ngModel)]="modelo.buscador.texto" name="textoFiltro" #textoFiltro></ion-input>
+
+    </ion-item>
+    <button type="submit" [disabled]="categoriasFiltro.value != undefined or textoFiltro != undefined">Buscar</button>
+  </form>
+
+  Lista productos
+  <ion-list>
+    <ion-item-sliding *ngFor="let producto of modelo.productos">
+
+      <ion-item>
+        {{producto.nombre}}
+      </ion-item>
+      <ion-item>
+        <button ion-button (click)="detalle(producto)">Comprar</button>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
